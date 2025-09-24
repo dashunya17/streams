@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        OneThread [] threads = new OneThread[10]; //массив дл хранения потоков
+        OneThread [] threads = new OneThread[10]; //массив для хранения потоков
         for (int i = 0; i< 10; i++){ //запускаем потоки
             threads[i] = new OneThread(i+1);
             threads[i].start();
